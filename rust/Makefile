@@ -8,4 +8,4 @@ $(ARCHS_IOS): %:
 	cargo build --target $@ --release --no-default-features
 
 $(LIB): $(ARCHS_IOS)
-	lipo -create -output $@ $(foreach arch,$(ARCHS_IOS),$(wildcard target/$(arch)/release/$(LIB)))
+	lipo -create -output target/$@ $(foreach arch,$(ARCHS_IOS),$(wildcard target/$(arch)/release/$(LIB)))

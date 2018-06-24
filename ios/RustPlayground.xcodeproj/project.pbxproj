@@ -7,26 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		660859D220DFD7A900C55988 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660859D120DFD7A900C55988 /* Images.swift */; };
+		660859D420DFD93E00C55988 /* librust_playground.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FB907D20DFAED3003000F3 /* librust_playground.a */; };
 		66FB906820DFA7DC003000F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FB906720DFA7DC003000F3 /* AppDelegate.swift */; };
-		66FB906A20DFA7DC003000F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FB906920DFA7DC003000F3 /* ViewController.swift */; };
+		66FB906A20DFA7DC003000F3 /* PlaygroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FB906920DFA7DC003000F3 /* PlaygroundViewController.swift */; };
 		66FB906D20DFA7DC003000F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66FB906B20DFA7DC003000F3 /* Main.storyboard */; };
 		66FB906F20DFA7DC003000F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66FB906E20DFA7DC003000F3 /* Assets.xcassets */; };
 		66FB907220DFA7DC003000F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66FB907020DFA7DC003000F3 /* LaunchScreen.storyboard */; };
 		66FB907B20DFAE1E003000F3 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FB907A20DFAE1E003000F3 /* String.swift */; };
-		66FB907E20DFAED3003000F3 /* librust_playground.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FB907D20DFAED3003000F3 /* librust_playground.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		660859D120DFD7A900C55988 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		66FB906420DFA7DC003000F3 /* RustPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RustPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66FB906720DFA7DC003000F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		66FB906920DFA7DC003000F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		66FB906920DFA7DC003000F3 /* PlaygroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundViewController.swift; sourceTree = "<group>"; };
 		66FB906C20DFA7DC003000F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66FB906E20DFA7DC003000F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66FB907120DFA7DC003000F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66FB907320DFA7DC003000F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66FB907A20DFAE1E003000F3 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		66FB907D20DFAED3003000F3 /* librust_playground.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librust_playground.a; path = ../rust/rust_playground/librust_playground.a; sourceTree = "<group>"; };
-		66FB907F20DFB02C003000F3 /* rust_playground.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rust_playground.h; path = ../rust/rust_playground/include/rust_playground.h; sourceTree = "<group>"; };
+		66FB907D20DFAED3003000F3 /* librust_playground.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librust_playground.a; path = ../rust/target/librust_playground.a; sourceTree = "<group>"; };
+		66FB907F20DFB02C003000F3 /* rust_playground.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rust_playground.h; path = ../rust/include/rust_playground.h; sourceTree = "<group>"; };
 		66FB908020DFB042003000F3 /* RustPlayground-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RustPlayground-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -35,13 +37,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66FB907E20DFAED3003000F3 /* librust_playground.a in Frameworks */,
+				660859D420DFD93E00C55988 /* librust_playground.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		660859D020DFD7A900C55988 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				660859D120DFD7A900C55988 /* Images.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		66FB905B20DFA7DC003000F3 = {
 			isa = PBXGroup;
 			children = (
@@ -65,10 +75,11 @@
 			isa = PBXGroup;
 			children = (
 				66FB906720DFA7DC003000F3 /* AppDelegate.swift */,
+				660859D020DFD7A900C55988 /* Common */,
 				66FB910B20DFB4EC003000F3 /* Controllers */,
 				66FB907920DFAE14003000F3 /* FFI */,
+				66FB910D20DFB503003000F3 /* Resources */,
 				66FB910C20DFB4F5003000F3 /* Storyboards */,
-				66FB910D20DFB503003000F3 /* SupportingFiles */,
 			);
 			path = RustPlayground;
 			sourceTree = "<group>";
@@ -91,7 +102,7 @@
 		66FB910B20DFB4EC003000F3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				66FB906920DFA7DC003000F3 /* ViewController.swift */,
+				66FB906920DFA7DC003000F3 /* PlaygroundViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -105,14 +116,14 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		66FB910D20DFB503003000F3 /* SupportingFiles */ = {
+		66FB910D20DFB503003000F3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				66FB906E20DFA7DC003000F3 /* Assets.xcassets */,
 				66FB907320DFA7DC003000F3 /* Info.plist */,
 				66FB908020DFB042003000F3 /* RustPlayground-Bridging-Header.h */,
 			);
-			path = SupportingFiles;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +210,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=$HOME/.cargo/bin:$PATH\ncd $PROJECT_DIR/../rust/rust_playground\nmake ios\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=$HOME/.cargo/bin:$PATH\ncd $PROJECT_DIR/../rust\nmake ios\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -210,7 +221,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				66FB907B20DFAE1E003000F3 /* String.swift in Sources */,
-				66FB906A20DFA7DC003000F3 /* ViewController.swift in Sources */,
+				660859D220DFD7A900C55988 /* Images.swift in Sources */,
+				66FB906A20DFA7DC003000F3 /* PlaygroundViewController.swift in Sources */,
 				66FB906820DFA7DC003000F3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,16 +369,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 52W2H99QHH;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../rust/rust_playground/include";
-				INFOPLIST_FILE = RustPlayground/SupportingFiles/Info.plist;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../rust/include";
+				INFOPLIST_FILE = RustPlayground/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../rust/rust_playground";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../rust/target";
 				PRODUCT_BUNDLE_IDENTIFIER = com.skyapps.RustPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "RustPlayground/SupportingFiles/RustPlayground-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "RustPlayground/Resources/RustPlayground-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -378,16 +390,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 52W2H99QHH;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../rust/rust_playground/include";
-				INFOPLIST_FILE = RustPlayground/SupportingFiles/Info.plist;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../rust/include";
+				INFOPLIST_FILE = RustPlayground/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../rust/rust_playground";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../rust/target";
 				PRODUCT_BUNDLE_IDENTIFIER = com.skyapps.RustPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "RustPlayground/SupportingFiles/RustPlayground-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "RustPlayground/Resources/RustPlayground-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
