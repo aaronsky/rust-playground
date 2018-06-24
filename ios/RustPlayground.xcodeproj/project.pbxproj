@@ -210,7 +210,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=$HOME/.cargo/bin:$PATH\ncd $PROJECT_DIR/../rust\nmake ios\n";
+			shellScript = "$PROJECT_DIR/Scripts/build-rust-dependencies.sh\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
