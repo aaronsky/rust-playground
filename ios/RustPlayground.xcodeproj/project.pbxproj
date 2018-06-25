@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		660859D220DFD7A900C55988 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660859D120DFD7A900C55988 /* Images.swift */; };
+		66BE9A9220E079E000411268 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BE9A9120E079E000411268 /* libresolv.tbd */; };
 		66FB906820DFA7DC003000F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FB906720DFA7DC003000F3 /* AppDelegate.swift */; };
 		66FB906A20DFA7DC003000F3 /* PlaygroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FB906920DFA7DC003000F3 /* PlaygroundViewController.swift */; };
 		66FB906D20DFA7DC003000F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66FB906B20DFA7DC003000F3 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		660859D120DFD7A900C55988 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		66BE9A9120E079E000411268 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		66FB906420DFA7DC003000F3 /* RustPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RustPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66FB906720DFA7DC003000F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66FB906920DFA7DC003000F3 /* PlaygroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66BE9A9220E079E000411268 /* libresolv.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +94,7 @@
 		66FB907C20DFAED2003000F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				66BE9A9120E079E000411268 /* libresolv.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

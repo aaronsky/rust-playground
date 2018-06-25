@@ -2,13 +2,9 @@
 
 PROJECT_DIR=$(git rev-parse --show-toplevel)
 
-rustup override set nightly
+rustup update stable
 
-rustup target add aarch64-apple-ios
-rustup target add armv7-apple-ios
-rustup target add armv7s-apple-ios
-rustup target add i386-apple-ios
-rustup target add x86_64-apple-ios
+rustup target add aarch64-apple-ios armv7-apple-ios armv7s-apple-ios i386-apple-ios x86_64-apple-ios
 
 cargo install cargo-lipo 2> /dev/null
 
