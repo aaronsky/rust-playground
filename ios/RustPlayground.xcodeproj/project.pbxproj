@@ -6,6 +6,20 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		33E39E4220E298B900D66EFA /* Rust */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 33E39E4520E298B900D66EFA /* Build configuration list for PBXAggregateTarget "Rust" */;
+			buildPhases = (
+				33E39E4620E298BF00D66EFA /* Build Rust Libraries */,
+			);
+			dependencies = (
+			);
+			name = Rust;
+			productName = Rust;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		660859D220DFD7A900C55988 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660859D120DFD7A900C55988 /* Images.swift */; };
 		66BE9A9220E079E000411268 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BE9A9120E079E000411268 /* libresolv.tbd */; };
@@ -16,6 +30,16 @@
 		66FB907220DFA7DC003000F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66FB907020DFA7DC003000F3 /* LaunchScreen.storyboard */; };
 		66FB907B20DFAE1E003000F3 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FB907A20DFAE1E003000F3 /* String.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33E39E4720E298DC00D66EFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66FB905C20DFA7DC003000F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33E39E4220E298B900D66EFA;
+			remoteInfo = Rust;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		660859D120DFD7A900C55988 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
@@ -133,7 +157,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66FB907620DFA7DC003000F3 /* Build configuration list for PBXNativeTarget "RustPlayground" */;
 			buildPhases = (
-				66FB908120DFB2FA003000F3 /* Build Rust Libraries */,
 				66FB906020DFA7DC003000F3 /* Sources */,
 				66FB906120DFA7DC003000F3 /* Frameworks */,
 				66FB906220DFA7DC003000F3 /* Resources */,
@@ -141,6 +164,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				33E39E4820E298DC00D66EFA /* PBXTargetDependency */,
 			);
 			name = RustPlayground;
 			productName = RustPlayground;
@@ -157,6 +181,9 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = SkyApps;
 				TargetAttributes = {
+					33E39E4220E298B900D66EFA = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					66FB906320DFA7DC003000F3 = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -176,6 +203,7 @@
 			projectRoot = "";
 			targets = (
 				66FB906320DFA7DC003000F3 /* RustPlayground */,
+				33E39E4220E298B900D66EFA /* Rust */,
 			);
 		};
 /* End PBXProject section */
@@ -194,7 +222,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		66FB908120DFB2FA003000F3 /* Build Rust Libraries */ = {
+		33E39E4620E298BF00D66EFA /* Build Rust Libraries */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -229,6 +257,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		33E39E4820E298DC00D66EFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33E39E4220E298B900D66EFA /* Rust */;
+			targetProxy = 33E39E4720E298DC00D66EFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		66FB906B20DFA7DC003000F3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -249,6 +285,24 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		33E39E4320E298B900D66EFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52W2H99QHH;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		33E39E4420E298B900D66EFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52W2H99QHH;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		66FB907420DFA7DC003000F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -300,7 +354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -354,7 +408,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -371,6 +425,7 @@
 				DEVELOPMENT_TEAM = 52W2H99QHH;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../rust/include";
 				INFOPLIST_FILE = RustPlayground/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -393,6 +448,7 @@
 				DEVELOPMENT_TEAM = 52W2H99QHH;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../rust/include";
 				INFOPLIST_FILE = RustPlayground/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -410,6 +466,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		33E39E4520E298B900D66EFA /* Build configuration list for PBXAggregateTarget "Rust" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33E39E4320E298B900D66EFA /* Debug */,
+				33E39E4420E298B900D66EFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		66FB905F20DFA7DC003000F3 /* Build configuration list for PBXProject "RustPlayground" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
